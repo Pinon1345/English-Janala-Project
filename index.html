@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body class="mx-auto">
     <header>
         <div class="navbar bg-base-100 shadow-sm bg-[#BADEFF]/25">
             <div class="navbar-start">
@@ -117,13 +117,30 @@
         </div>
     </section>
 
-    <section>
-        <h2 class="text-[36px] font-bold mb-8 mt-4 text-center"><span class="text-blue-400">Let's</span> Learn
-            Vocabularies</h2>
+    <section class="w-11/12 mx-auto">
+        <h2 class="text-[36px] font-bold mb-8 mt-4 text-center"><span class="text-blue-400">Let's</span> Learn Vocabularies</h2>
 
         <div id="level-container" class="flex gap-5 flex-wrap justify-center items-center mb-12">
 
         </div>
+    </section>
+
+    <section class="flex justify-center w-11/12 mx-auto">
+
+        <div class="join">
+            <div>
+                <label class="input validator join-item">
+
+                    <input 
+                        id="input-search" type="text" placeholder="Search Vocabulary Now" required />
+                    </label>
+                <div class="validator-hint hidden">Please try again</div>
+            </div>
+            <button 
+                id="btn-search" class="btn btn-primary join-item">Search
+            </button>
+        </div>
+
     </section>
 
     <section id="spinner" class="flex justify-center items-center py-10 hidden">
@@ -131,7 +148,7 @@
     </section>
 
     <section id="word-container"
-        class="bg-gray-100 p-10 w-11/12 mx-auto my-10 shadow-sm rounded-[15px] grid grid-cols-3 items-center gap-5">
+        class="bg-gray-100 p-10 w-11/12 mx-auto my-10 shadow-sm rounded-[15px] grid md:grid-cols-3 items-center gap-5 sm:grid-cols-1">
 
         <div class="text-center col-span-full py-10 space-y-2 font-bangla">
             <p class="font-medium text-xl text-gray-600">আপনি এখনো কোনো Lesson Select করেন নি!</p>
@@ -149,7 +166,7 @@
     <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box">
             <div id="details_container" class="">
-                
+
             </div>
             <div class="modal-action">
                 <form method="dialog">
